@@ -1,0 +1,502 @@
+﻿- type: entity
+  id: PlushieAnameGermanikum
+  parent: BasePlushie
+  name: Plush Aname Germanikum
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    layers:
+    - state: plushie-aname
+    - state: plushie-aname-unshaded
+      shader: unshaded
+  - type: TriggerOnActivate
+  - type: SpeakOnTrigger
+    pack: LoviAptechku
+  - type: TTS
+    voice: Triss
+
+- type: localizedDataset
+  id: LoviAptechku
+  values:
+    prefix: lovi-aptechku-
+    count: 1
+
+- type: entity
+  id: PlushieAnnaLisechanskaya
+  parent: BasePlushie
+  name: Plush Anna Lisechanskaya
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: plushie-anna
+  - type: EmoteOnUse
+    values:
+    - Moan
+  - type: Vocal
+  - type: Emoting
+  - type: EmitSoundOnUse
+    sound:
+      collection: FemaleMoan
+  - type: UseDelay
+    delay: 10
+
+- type: entity
+  id: PlushieMira
+  parent: BasePlushie
+  name: Plush mira
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: mira
+
+- type: entity
+  id: PlushieSashaChernyh
+  parent: BasePlushie
+  name: Plush Sasha
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: sasha_chernyh
+
+- type: localizedDataset
+  id: KharshaPhrases
+  values:
+    prefix: kharsha-
+    count: 2
+
+- type: entity
+  id: PlushieKharsha
+  parent: BasePlushie
+  name: Plush Kharsha
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: kharsha
+  - type: TriggerOnActivate
+  - type: SpeakOnTrigger
+    pack: KharshaPhrases
+  - type: TTS
+    voice: SironaRyan
+  - type: UseDelay
+    delay: 3
+
+- type: localizedDataset
+  id: VaxelPhrases
+  values:
+    prefix: vaxel-
+    count: 5
+
+- type: entity
+  id: PlushieVaxel
+  parent: BasePlushie
+  name: Plush Vaxel
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: plushie_vaxel
+  - type: TriggerOnActivate
+  - type: SpeakOnTrigger
+    pack: VaxelPhrases
+  - type: UseDelay
+    delay: 3
+
+- type: localizedDataset
+  id: PinkersPhrases
+  values:
+    prefix: pinkers-
+    count: 1
+
+- type: entity
+  id: PlushiePinkers
+  parent: BasePlushie
+  name: Plush Pinkers
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: plushie_pinkers
+  - type: TriggerOnActivate
+  - type: SpeakOnTrigger
+    pack: PinkersPhrases
+  - type: TTS
+    voice: Mana
+  - type: UseDelay
+    delay: 3
+
+- type: entity
+  id: PlushieAliceSimonova
+  parent: BasePlushie
+  name: Plush Alice Simonova
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: alisa_simonova_de_mori
+
+- type: entity
+  id: PlushieSaiHaks
+  parent: BasePlushie
+  name: Plush Sai Haks
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: sai_haks2
+  - type: UseDelay
+    delay: 5
+
+- type: entity
+  id: PlushieDragonaft
+  parent: BasePlushie
+  name: Plushie Dragonaft
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: dragonaft
+  - type: TriggerOnActivate
+  - type: SpeakOnTrigger
+    pack: DragonaftPhrases
+  - type: TTS
+    voice: Crysis2Operator3v1
+  - type: UseDelay
+    delay: 5
+
+- type: localizedDataset
+  id: DragonaftPhrases
+  values:
+    prefix: dragonaft-
+    count: 2
+
+- type: entity
+  id: PlushieEuphaEverek
+  parent: BasePlushie
+  name: Eupha Everek
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: eupha_everek
+  - type: EmoteOnUse
+    values:
+    - Moan
+  - type: Vocal
+  - type: Emoting
+  - type: EmitSoundOnUse
+    sound:
+      collection: EuphMoan
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_Lust/Interactions/euphtrig.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Lust/Interactions/euphtrig.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Lust/Interactions/euphtrig.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_Lust/Interactions/euphtrig.ogg
+  - type: TriggerOnActivate
+  - type: UseDelay
+    delay: 4
+
+- type: entity
+  id: PlushieRandyCamble
+  parent: BasePlushie
+  name: Randy Camble
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: plushie_rend
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Lust/rendy_boom.ogg
+      params:
+        volume: -8
+  - type: TriggerOnActivate
+  - type: UseDelay
+    delay: 15
+
+- type: entity
+  id: PlushieAlexandrLimenski
+  parent: BasePlushie
+  name: Alexandr Limenski
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: alexandr_limenski
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Lust/huem_po_lbu.ogg
+      params:
+        volume: -2
+  - type: TriggerOnActivate
+  - type: UseDelay
+    delay: 5
+
+- type: entity
+  id: PlushieHimaAisetova
+  parent: BasePlushie
+  name: Hima Aisetova
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: plushiechitas
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Lust/bonk.ogg
+  - type: TriggerOnActivate
+  - type: UseDelay
+    delay: 5
+
+- type: entity
+  id: PlushieMaksimDedov
+  parent: BasePlushie
+  name: Maksim Dedov
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: ded_plushie
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Lust/half-life_crowbar.ogg
+  - type: TriggerOnActivate
+  - type: UseDelay
+    delay: 1
+
+- type: localizedDataset
+  id: bykovPhrases
+  values:
+    prefix: bykov-
+    count: 2
+
+- type: entity
+  id: PlushieIvanBykov
+  parent: BasePlushie
+  name: Ivan Bykov
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: bykov
+  - type: TriggerOnActivate
+  - type: SpeakOnTrigger
+    pack: bykovPhrases
+  - type: TTS
+    voice: TF2Soldier
+  - type: UseDelay
+    delay: 5
+
+- type: entity
+  parent: PlushieLizard
+  id: PlushieSvyashenLuna
+  name: Svyashen-Luna
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: luna
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFranzEvans
+  name: Plushie Franz Evans
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: franz-evans
+  - type: EmitSoundOnUse
+    sound:
+      collection: MaleSevereCough
+      params:
+        variation: 0.125
+  - type: EmitSoundOnActivate
+    sound:
+      collection: MaleSevereCough
+      params:
+        variation: 0.125
+  - type: EmitSoundOnLand
+    sound:
+      collection: MaleSevereCough
+      params:
+        variation: 0.125
+  - type: EmitSoundOnCollide
+    sound:
+      collection: MaleSevereCough
+      params:
+        variation: 0.125
+  - type: TriggerOnActivate
+  - type: UseDelay
+    delay: 1
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieArelitt
+  name: Plushie Arelitt Varmolnd
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: arelitt-varmolnd
+    scale: 1.15, 1.15
+  - type: Item
+    size: Large
+  - type: EmitSoundOnLand
+    sound:
+      collection: FemaleSigh
+      params:
+        variation: 0.125
+  - type: UseDelay
+    delay: 1
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieAsyaFartuna
+  name: Plushie Asya Fartuna
+  components:
+  - type: UseDelay
+    delay: 4
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: asya_fartuna
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Sunrise/Voice/Felinid/cat_purr1.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieRustemBrich
+  name: Plushie Rustem Brich
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: rustem_brich
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Lust/vremya_dengi.ogg
+  - type: UseDelay
+    delay: 4
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieBlizzard
+  name: Plushie Blizzard
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: blizzard
+  - type: UseDelay
+    delay: 4
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: Item
+    heldPrefix: blizz
+  - type: Clothing
+    quickEquip: false
+    sprite: _Lust/Objects/Fun/toys.rsi
+    equippedPrefix: blizz
+    slots:
+    - HEAD
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieShinyaKucenko
+  name: Plushie Shinya Kucenko
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: shinya-kucenko
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Effects/Gasp/male_deathgasp_1.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Lust/Interactions/skratch/skratch_1.ogg
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Lust/Interactions/skratch/skratch_1.ogg
+  - type: Clothing
+    quickEquip: false
+    sprite: _Lust/Objects/Fun/toys.rsi
+    equippedPrefix: shinya
+    slots:
+    - NECK
+  - type: Item
+    heldPrefix: shinya
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieUlavaBritz
+  name: Plushie Ulava-Britz
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: ulava-britz
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieSophieKomissarova
+  name: Plushie Sophie Komissarova
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/toys.rsi
+    state: sophiekomissarova
+  - type: UseDelay
+    delay: 4
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Defib/defib_charge.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieDrasusLeverian
+  name: Plushie Drasus Leverian
+  components:
+  - type: Sprite
+    sprite: _Lust/Objects/Fun/Plushies/drasus_leverian.rsi
+    state: icon
+  - type: UseDelay
+    delay: 6
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Machines/scanning.ogg
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Machines/scanning.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Stamp/automatic_stamp.ogg
+  - type: Clothing
+    quickEquip: false
+    sprite: _Lust/Objects/Fun/Plushies/drasus_leverian.rsi
+    slots:
+    - NECK
+  - type: Item
+    sprite: _Lust/Objects/Fun/Plushies/drasus_leverian.rsi
