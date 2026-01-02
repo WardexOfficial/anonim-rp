@@ -217,7 +217,7 @@ public sealed partial class SunriseCCVars : CVars
         CVarDef.Create("lobby.lobby_opacity", 0.90f, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     public static readonly CVarDef<string> ServerName =
-        CVarDef.Create("lobby.server_name", "Sunrise Station", CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("lobby.server_name", "AnonimRP V2", CVar.SERVER | CVar.REPLICATED);
 
     /*
      * Planet Prison
@@ -255,7 +255,7 @@ public sealed partial class SunriseCCVars : CVars
      */
 
     public static readonly CVarDef<bool> CryoTeleportEnable =
-        CVarDef.Create("cryo_teleport.enable", true, CVar.SERVERONLY);
+        CVarDef.Create("cryo_teleport.enable", false, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> CryoTeleportTransferDelay =
         CVarDef.Create("cryo_teleport.transfer_delay", 5, CVar.SERVERONLY);
