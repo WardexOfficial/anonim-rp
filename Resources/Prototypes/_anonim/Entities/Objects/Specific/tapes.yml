@@ -22,7 +22,7 @@
       state: tape_1
     - type: MusicTape
       songName: Sierra
-      sound: Resources/Audio/_Sunrise/TapePlayer/Tracks/Sierra.ogg
+      sound: /Audio/_Sunrise/TapePlayer/Tracks/Sierra.ogg
 
 - type: entity
   parent: BaseMusicTape
@@ -34,7 +34,7 @@
       state: tape_2
     - type: MusicTape
       songName: NUKE MASS
-      sound: Resources/Audio/_Sunrise/TapePlayer/Tracks/NukeMass.ogg
+      sound: /Audio/_Sunrise/TapePlayer/Tracks/NukeMass.ogg
 
 - type: entity
   parent: BaseMusicTape
@@ -46,4 +46,4 @@
       state: tape_3
     - type: MusicTape
       songName: Bella Ciao
-      sound: Resources/Audio/_Sunrise/TapePlayer/Tracks/BellaCiao.ogg
+      sound: /Audio/_Sunrise/TapePlayer/Tracks/BellaCiao.ogg
