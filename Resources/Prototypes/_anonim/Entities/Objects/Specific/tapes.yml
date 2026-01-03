@@ -1,0 +1,36 @@
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape1
+  name: кассета магнитофона (Sierra)
+  description: null
+  components:
+    - type: Sprite
+      state: tape_1
+    - type: MusicTape
+      songName: Sierra
+      sound: Resources/Audio/_Sunrise/TapePlayer/Tracks/Sierra.ogg
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape2
+  name: кассета магнитофона (NUKE MASS)
+  description: null
+  components:
+    - type: Sprite
+      state: tape_2
+    - type: MusicTape
+      songName: NUKE MASS
+      sound: Resources/Audio/_Sunrise/TapePlayer/Tracks/NukeMass.ogg
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape3
+  name: кассета магнитофона (Bella Ciao)
+  description: null
+  components:
+    - type: Sprite
+      state: tape_3
+    - type: MusicTape
+      songName: Bella Ciao
+      sound: Resources/Audio/_Sunrise/TapePlayer/Tracks/BellaCiao.ogg
