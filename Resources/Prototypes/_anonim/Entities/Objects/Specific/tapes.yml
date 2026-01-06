@@ -2,7 +2,7 @@
 
 - type: entity
   parent: BaseMusicTape
-  id: MusicTape0
+  id: BaseMusicTape
   name: tape
   description: this is tape
   abstract: true
@@ -14,36 +14,96 @@
 
 - type: entity
   parent: BaseMusicTape
-  id: MusicTape1
+  id: MusicTape2
   name: кассета магнитофона (Sierra)
   description: null
   components:
     - type: Sprite
-      state: tape_1
+      state: tape1
     - type: MusicTape
       songName: Sierra
       sound: /Audio/_anonim/TapePlayer/Tracks/Sierra.ogg
 
 - type: entity
   parent: BaseMusicTape
-  id: MusicTape2
+  id: MusicTape3
   name: кассета магнитофона (NUKE MASS)
   description: null
   components:
     - type: Sprite
-      state: tape_2
+      state: tape2
     - type: MusicTape
       songName: NUKE MASS
       sound: /Audio/_anonim/TapePlayer/Tracks/NukeMass.ogg
 
 - type: entity
   parent: BaseMusicTape
-  id: MusicTape3
+  id: MusicTape4
   name: кассета магнитофона (Bella Ciao)
   description: null
   components:
     - type: Sprite
-      state: tape_3
+      state: tape3
     - type: MusicTape
       songName: Bella Ciao
       sound: /Audio/_anonim/TapePlayer/Tracks/BellaCiao.ogg
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape5
+  name: кассета магнитофона (Гаряча кров)
+  description: null
+  components:
+    - type: Sprite
+      state: tape4
+    - type: MusicTape
+      songName: Гаряча кров
+      sound: /Audio/_anonim/TapePlayer/Tracks/GoryachaKrov.ogg
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape6
+  name: кассета магнитофона (Воїни волі)
+  description: null
+  components:
+    - type: Sprite
+      state: tape5
+    - type: MusicTape
+      songName: Воїни волі
+      sound: /Audio/_anonim/TapePlayer/Tracks/WoinyWoli.ogg
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape7
+  name: кассета магнитофона (Дельфіни)
+  description: null
+  components:
+    - type: Sprite
+      state: tape6
+    - type: MusicTape
+      songName: Дельфіни
+      sound: /Audio/_anonim/TapePlayer/Tracks/Delfiny.ogg
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape8
+  name: кассета магнитофона (Квітень)
+  description: null
+  components:
+    - type: Sprite
+      state: tape7
+    - type: MusicTape
+      songName: Квітень
+      sound: /Audio/_anonim/TapePlayer/Tracks/Kviten.ogg
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape9
+  name: кассета магнитофона (Тепла Зима)
+  description: null
+  components:
+    - type: Sprite
+      state: tape8
+    - type: MusicTape
+      songName: Тепла Зима
+      sound: /Audio/_anonim/TapePlayer/Tracks/TeplaZyma.ogg
