@@ -94,3 +94,15 @@
     - type: MusicTape
       songName: Тепла Зима
       sound: /Audio/_anonim/TapePlayer/Tracks/TeplaZyma.ogg
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape10
+  name: кассета магнитофона (Empire of Geese - HARD_DRIVE)
+  description: null
+  components:
+    - type: Sprite
+      state: tape9
+    - type: MusicTape
+      songName: Empire of Geese - HARD_DRIVE
+      sound: /Audio/_anonim/TapePlayer/Tracks/Empire_of_Geese_HARD_DRIVE.ogg
